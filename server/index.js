@@ -23,6 +23,6 @@ app.use(passport.session());
 require('./routes/auth')(app);
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3300;
 app.listen(PORT);
 console.log('Server started at port ' + PORT);
