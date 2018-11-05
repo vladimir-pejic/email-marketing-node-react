@@ -7,7 +7,7 @@ require('./models/User');
 require('./services/passport');
 
 
-mongoose.connect('mongodb://localhost:27017/emailer-dev', { useNewUrlParser: true });
+mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
 
 
 const app = express();
